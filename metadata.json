@@ -6,11 +6,11 @@
     {
         "Swatch 1": {
             "color1":"#ffffff",
-            "color2":"#645f58",
-            "color3":"#cc220b",
-            "color4":"#5c564d",
-            "color5":"#d1ccc2",
-            "color6":"#524a42",
+            "color2":"#6c6c6c",
+            "color3":"#1f55b7",
+            "color4":"#909298",
+            "color5":"#e63f01",
+            "color6":"#d9d9d9",
             "color7":"#77736c"
         },
         "Swatch 2": {
@@ -53,7 +53,7 @@
     "fontSwatch": {
        "title": "Arvo",
         "font1": {
-            "font-family": "Arvo",     
+            "font-family": "Yanone Kaffeesatz",     
             "font-size": "36px",       
             "font-weight": "inherit",  
             "line-height": "36px",     
