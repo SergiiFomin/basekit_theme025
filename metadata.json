@@ -1,0 +1,138 @@
+{
+  "name":"basekit_default",
+  "thumbnail":"theme_preview.png",
+  "screenshot":"theme_preview.png",    
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#645f58",
+            "color3":"#cc220b",
+            "color4":"#5c564d",
+            "color5":"#d1ccc2",
+            "color6":"#524a42",
+            "color7":"#77736c"
+        },
+        "Swatch 2": {
+            "color1":"#ffffff",
+            "color2":"#72d0eb",
+            "color3":"#83c028",
+            "color4":"#2f353e",
+            "color5":"#b4bec7",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        },
+        "Swatch 3": {
+            "color1":"#ffffff",
+            "color2":"#72d0eb",
+            "color3":"#83c028",
+            "color4":"#2f353e",
+            "color5":"#b4bec7",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        },
+        "Swatch 4": {
+            "color1":"#ffffff",
+            "color2":"#72d0eb",
+            "color3":"#83c028",
+            "color4":"#2f353e",
+            "color5":"#b4bec7",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        },
+        "Swatch 5": {
+            "color1":"#ffffff",
+            "color2":"#72d0eb",
+            "color3":"#83c028",
+            "color4":"#2f353e",
+            "color5":"#b4bec7",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        }
+    },
+    "fontSwatch": {
+       "title": "Arvo",
+        "font1": {
+            "font-family": "Arvo",     
+            "font-size": "36px",       
+            "font-weight": "inherit",  
+            "line-height": "36px",     
+            "color": "@color-swatch4", 
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "Yanone Kaffeesatz",     
+            "font-size": "30px",       
+            "font-weight": "bold",  
+            "line-height": "56px",  
+            "color": "@dark", 
+            "letter-spacing": "1px"
+        },
+        "font3": {
+            "font-family": "Yanone Kaffeesatz",     
+            "font-size": "22px",       
+            "font-weight": "bold",  
+            "line-height": "26px",  
+            "color": "@dark", 
+            "letter-spacing": "1px"
+        },
+        "font4": {
+            "font-family": "Yanone Kaffeesatz",
+            "font-size": "14px",       
+            "font-weight": "bold",  
+            "line-height": "20px",  
+            "color": "@dark", 
+            "letter-spacing": "1px"
+        },
+        "font5": {
+            "font-family": "Yanone Kaffeesatz", 
+            "font-size": "10px",        
+            "font-weight": "inherit",   
+            "line-height": "20px",      
+            "color": "@color-swatch6",
+            "letter-spacing": "1px"
+        },
+        "font6": {
+            "font-family": "Yanone Kaffeesatz",
+            "font-size": "23px", 
+            "font-weight": "bold",
+            "line-height": "40px",
+            "color": "@color-swatch4",
+            "color-hover": "@color-swatch5",
+            "letter-spacing": "1px"
+        },
+        "font7": {
+            "font-family": "Yanone Kaffeesatz",
+            "font-size": "14px",        
+            "font-weight": "bold",   
+            "line-height": "20px",   
+            "color": "@color-swatch3",
+            "color-hover": "@color-swatch5",
+            "letter-spacing": "1px"
+        },
+        "font8": {
+            "font-family": "Arvo",   
+            "font-size": "50px",     
+            "font-weight": "inherit",
+            "line-height": "50px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "Arvo",
+            "font-size": "24px",
+            "font-weight": "inherit",
+            "line-height": "50px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "Arvo",
+            "font-size": "24px",
+            "font-weight": "inherit",
+            "line-height": "50px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        }
+    }
+}

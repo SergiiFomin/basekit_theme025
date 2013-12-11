@@ -1,0 +1,156 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">    
+    <div class="global">
+        <!--header-->
+        <header>
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <article class="span12">
+                            <div class="row">
+                                <article class="span2">
+                                    {{widget('logo', 'name', {"defaultlogo": asset('images/logo.png')})|raw}}
+                                </article>
+                                <article class="span6">
+                                    {{widget('extendednavigation', 'extendednavigation', {"align":"center"})|raw}}
+                                </article>
+                                <article class="span4">
+                                    {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': '#'})|raw}}
+                                </article>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="showcase">
+            <div class="container">
+                <div class="row">
+                    <article class="span12">
+
+                        {{widget('responsiveslideshow', 'responsiveslideshow', {'duration':'3', 'crop':1, 'transSpeed': '1000', 'transType': 'fade', 'showDescription': false, 'showTitle': false, 'showButtons': false, 'showBullets': true, 'allowPause': false, 'allowLoop': true, 'images':[{'imageHeight':'561', 'imageWidth':'1170', 'url':asset('/images/slider/slide-1.jpg'), 'title':'title', 'description': 'Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolo'}, {'imageHeight':'561','imageWidth':'1170', 'url':asset('/images/slider/slide-2.jpg'), 'title':'title', 'description': 'Aenean aliquet suscipit velit, sed gravida sem egestas quis. Praesent semper vitae nisl porta ornare.'}, {'imageHeight':'561', 'imageWidth':'1170', 'url':asset('/images/slider/slide-3.jpg'), 'title':'title', 'description': 'Nam blandit elementum dolor sit amet condimentum. Praesent sodales nunc id hendrerit sollicitudin.'}, {'imageHeight':'561', 'imageWidth':'1170', 'url':asset('/images/slider/slide-4.jpg'), 'title':'title', 'description': 'Nam blandit elementum dolor sit amet condimentum. Praesent sodales nunc id hendrerit sollicitudin.'}, {'imageHeight':'561', 'imageWidth':'1170', 'url':asset('/images/slider/slide-5.jpg'), 'title':'title', 'description': 'Nam blandit elementum dolor sit amet condimentum. Praesent sodales nunc id hendrerit sollicitudin.'}]})|raw}}
+
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="maintop">
+            <div class="container">
+                <div class="row">
+                    <article class="span12">
+                        {{widget('content', 'title1', {content: '<h2>Model Kits to Build</h2>', lines: 'all'})|raw}}
+                        {{widget('gallery', 'model', 
+                            {'showDescription': true,
+                            'showTitle': true,
+                            'images':
+                            [
+                            {'imageHeight':'134', 'imageWidth':'193', 'url':asset('/images/model/img1.jpg'), 'title':'Fermentum dictum ', 'description': 'magned laoreet aliqum leo'},
+                            {'imageHeight':'134', 'imageWidth':'193', 'url':asset('/images/model/img2.jpg'), 'title':'magned laoreet ', 'description': 'aliqum leo Ut tell'},
+                            {'imageHeight':'134', 'imageWidth':'193', 'url':asset('/images/model/img3.jpg'), 'title':'laoreet aliqum leo', 'description': 'magned laoreet aliqum leo'},
+                            {'imageHeight':'134', 'imageWidth':'193', 'url':asset('/images/model/img4.jpg'), 'title':'Ut telloribus eget ', 'description': 'Ut telloribus eget elem'},
+                            {'imageHeight':'134', 'imageWidth':'193', 'url':asset('/images/model/img5.jpg'), 'title':'lloribus egetent', 'description': 'magned laoreet aliqum leo'},
+                            {'imageHeight':'134', 'imageWidth':'193', 'url':asset('/images/model/img6.jpg'), 'title':'telloribus eget ', 'description': 'elementm vel curleind eli'}
+                            ]
+                        })|raw}}                            
+                        {{widget('space', 'space', {'height': '50'})|raw}}
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!--content-->
+        <div class="container">
+            <div class="row">
+                <article class="span12">
+
+                    {{zone('main')|raw}}
+
+                    <div class="row">
+                        <article class="span9">
+                            {{widget('content', 'title2', {content: '<h2>Latest News</h2>', lines: 'all'})|raw}}
+                            <figure class="fleft medium">{{widget('image', 'image1', { 'src': asset('images/pages/page1-img1.jpg'), 'imageWidth': '440px'})|raw}}</figure>
+                            <div class="overflow">
+                            {{widget('content', 'text1', {content: '<h3>Lorem ipsum dolor amet consectetuer</h3><p>Magned laoreet aliqum leo. Ut telloribus eget element.um vel curleind elit. Aean auctorisi et urnaliqurat votpirpteerutrum an eu lastibulumtiamur lel metus. Nulla fn nec eros. Vestiblum ante ipsum primis fauus orci lucs et utrices posuersollicitud.</p><p>Eitsed leo pharetra aug nec augue. Nlit magnandrerit siet tincidunt aciverra sed nullanec porta diam eu massa. Quisque diam lorem nterdum vitaapibus ac scelerisque vitae pede. Donec ege ellus non erat lacinia fermentum.</p>', lines: 'all'})|raw}}
+                            </div>
+                            <div class="clear"></div>
+                            {{widget('line', 'line', {'thickness': 'inherit', 'padding': 'inherit', 'length':'inherit', 'align': 'center'})|raw}}
+                            <figure class="fleft small">{{widget('image', 'image2', { 'src': asset('images/pages/page1-img2.jpg'), 'imageWidth': '195px'})|raw}}</figure>
+                            <div class="overflow">
+                            {{widget('content', 'text2', {content: '<h3>Lorem ipsum dolor amet consectetuer</h3><p>Magned laoreet aliqum leo. Ut telloribus eget element.um vel curleind elit. Aean auctorisi et urnaliqurat votpirpteerutrum an eu lastibulumtiamur lel metus. Nulla fn nec eros. Vestiblum ante ipsum primis fauus orci lucs et utrices posuersollicitud.</p>', lines: 'all'})|raw}}
+                            </div>
+                            <div class="clear"></div>
+                            {{widget('line', 'line', {'thickness': 'inherit', 'padding': 'inherit', 'length':'inherit', 'align': 'center'})|raw}}
+                            <figure class="fleft small">{{widget('image', 'image3', { 'src': asset('images/pages/page1-img3.jpg'), 'imageWidth': '195px'})|raw}}</figure>
+                            <div class="overflow">
+                            {{widget('content', 'text3', {content: '<h3>Lorem ipsum dolor amet consectetuer</h3><p>Magned laoreet aliqum leo. Ut telloribus eget element.um vel curleind elit. Aean auctorisi et urnaliqurat votpirpteerutrum an eu lastibulumtiamur lel metus. Nulla fn nec eros. Vestiblum ante ipsum primis fauus orci lucs et utrices posuersollicitud.</p>', lines: 'all'})|raw}}
+                            </div>
+                            <div class="clear"></div>
+                            {{widget('line', 'line', {'thickness': 'inherit', 'padding': 'inherit', 'length':'inherit', 'align': 'center'})|raw}}
+                            <figure class="fleft small">{{widget('image', 'image4', { 'src': asset('images/pages/page1-img4.jpg'), 'imageWidth': '195px'})|raw}}</figure>
+                            <div class="overflow">
+                            {{widget('content', 'text4', {content: '<h3>Lorem ipsum dolor amet consectetuer</h3><p>Magned laoreet aliqum leo. Ut telloribus eget element.um vel curleind elit. Aean auctorisi et urnaliqurat votpirpteerutrum an eu lastibulumtiamur lel metus. Nulla fn nec eros. Vestiblum ante ipsum primis fauus orci lucs et utrices posuersollicitud.</p>', lines: 'all'})|raw}}
+                            </div>
+                            <div class="clear"></div>
+                            {{widget('line', 'line', {'thickness': 'inherit', 'padding': 'inherit', 'length':'inherit', 'align': 'center'})|raw}}
+                            {{widget('button', 'blue', {italic: false, text:'Older posts', 'align':'widget-align-left'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span3">
+                            {{widget('content', 'title3', {content: '<h2>categories</h2>', lines: 'all'})|raw}}
+                            {{widget('content', 'textX', {content: '<ul class="item-list"><li><a href="#">Praesent vestibulum</a></li><li><a href="#">molestie lacus</a></li><li><a href="#">Aenean nonummy</a></li><li><a href="#">hendrerit mauris</a></li><li><a href="#">Phasellus porta Fusce</a></li><li><a href="#">suscipit varius mi</a></li><li><a href="#">Cum sociis natoque</a></li><li><a href="#">penatibus et magnis dis</a></li><li><a href="#">parturient montes</a></li><li><a href="#">nascetur ridiculus mus</a></li><li><a href="#">Nulla dui Fusce</a></li><li><a href="#">feugiat malesuada odio</a></li><li><a href="#">Morbi nunc odio</a></li><li><a href="#">gravida at cursus nec</a></li><li><a href="#">luctus lorem</a></li><li><a href="#">Maecenas tristique orci ac</a></li><li><a href="#">sem. Duis ultricies</a></li><li><a href="#">pharetra magna Donec</a></li><li><a href="#">accumsan malesuada orci</a></li><li><a href="#">Donec sit amet eros</a></li><li><a href="#">Lorem ipsum dolor sit</a></li><li><a href="#">amet consectetuer</a></li><li><a href="#">adipiscing elit Mauris</a></li><li><a href="#">fermentum dictum magna</a></li><li><a href="#">Sed laoreet aliquam leo</a></li><li><a href="#">Ut tellus dolor dapibus</a></li><li><a href="#">eget elementum vel</a></li><li><a href="#">cursus eleifend elit</a></li><li><a href="#">Aenean auctor wisi et</a></li><li><a href="#">urna. Aliquam erat</a></li></ul>', lines: 'all'})|raw}}
+                            {{widget('space', 'space', {'height': '20'})|raw}}
+                            {{widget('button', 'red', {italic: false, text:'Older posts', 'align':'widget-align-left'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                    </div>
+                    <div class="row">
+                        <article class="span3">
+                            {{widget('content', 'title4', {content: '<h2>model trains</h2>', lines: 'all'})|raw}}
+                            {{widget('image', 'image5', { 'src': asset('images/pages/page1-img5.jpg'), 'imageWidth': '270px'})|raw}}
+                            {{widget('content', 'content', {content: '<p>Magned laoreet aliqum leo. Ut telloribus eget element.um vel curleind elit. Aean auctorisi et urnaliqurat votpirpteerutrum an eu lastibulumtiamur lel metus. Nulla fn nec eros. Vestibl.</p>', lines: 'all'})|raw}}
+                            {{widget('button', 'button1', {italic: false, text:'More', 'align':'widget-align-left'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span3">
+                            {{widget('content', 'title5', {content: '<h2>Metal Model Kits</h2>', lines: 'all'})|raw}}
+                            {{widget('image', 'image6', { 'src': asset('images/pages/page1-img6.jpg'), 'imageWidth': '270px'})|raw}}
+                            {{widget('content', 'content', {content: '<p>Magned laoreet aliqum leo. Ut telloribus eget element.um vel curleind elit. Aean auctorisi et urnaliqurat votpirpteerutrum an eu lastibulumtiamur lel metus. Nulla fn nec eros. Vestibl.</p>', lines: 'all'})|raw}}
+                            {{widget('button', 'button2', {italic: false, text:'More', 'align':'widget-align-left'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span3">
+                            {{widget('content', 'title6', {content: '<h2>Armor Plastic Models</h2>', lines: 'all'})|raw}}
+                            {{widget('image', 'image7', { 'src': asset('images/pages/page1-img7.jpg'), 'imageWidth': '270px'})|raw}}
+                            {{widget('content', 'content', {content: '<p>Magned laoreet aliqum leo. Ut telloribus eget element.um vel curleind elit. Aean auctorisi et urnaliqurat votpirpteerutrum an eu lastibulumtiamur lel metus. Nulla fn nec eros. Vestibl.</p>', lines: 'all'})|raw}}
+                            {{widget('button', 'button3', {italic: false, text:'More', 'align':'widget-align-left'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span3">
+                            {{widget('content', 'title7', {content: '<h2>Wood Model Kits</h2>', lines: 'all'})|raw}}
+                            {{widget('image', 'image8', { 'src': asset('images/pages/page1-img8.jpg'), 'imageWidth': '270px'})|raw}}
+                            {{widget('content', 'content', {content: '<p>Magned laoreet aliqum leo. Ut telloribus eget element.um vel curleind elit. Aean auctorisi et urnaliqurat votpirpteerutrum an eu lastibulumtiamur lel metus. Nulla fn nec eros. Vestibl.</p>', lines: 'all'})|raw}}
+                            {{widget('button', 'button4', {italic: false, text:'More', 'align':'widget-align-left'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div id="push"></div>
+    </div>   
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <section class="span12">
+                    {{widget('companyname', 'companyname', {"business": "Toys"})|raw}}
+                    {{widget('profile', 'copyright', { 'profileType':'copyright', 'copyright':'&copy; Copyright 2014. All rights reserved'})|raw}}
+                </section>
+            </div>
+        </div>
+    </footer>
+</div>
+
+{% endblock %}

@@ -1,0 +1,107 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+    <div class="global">
+        <!--header-->
+        <header>
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <article class="span12">
+                            <div class="row">
+                                <article class="span2">
+                                    {{widget('logo', 'name', {"defaultlogo": asset('images/logo.png')})|raw}}
+                                </article>
+                                <article class="span6">
+                                    {{widget('extendednavigation', 'extendednavigation', {"align":"center"})|raw}}
+                                </article>
+                                <article class="span4">
+                                    {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': '#'})|raw}}
+                                </article>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--content-->
+        <div class="container">
+            <div class="row">
+                <article class="span12">
+
+                    {{zone('main')|raw}}
+                    
+                    <div class="row">
+                        <article class="span4">                            
+                            {{widget('content', 'title1', {content: '<h2>About Us</h2>', lines: 'all'})|raw}}
+                            {{widget('image', 'image', { 'src': asset('images/pages/page2-img1.jpg'), 'imageWidth': '480px'})|raw}}
+                            {{widget('content', 'text1', {content: '<h3>Donec lectus leo consequat sit amet viverra et lacinia eu lectus! Nullam</h3><p>Magned laoreet aliqum leo. Ut telloribus eget element.um vel curleind elit. Aean auctorisi et urnaliqurat votpirpteerutrum an eu lastibulumtiamur lel metus. Nulla fn nec eros. Vestiblum ante ipsum primis fauus orci lucs et utrices posuersollicitud. Eitsed leo pharetra aug nec augue. Nlit magnandrerit siet tincidunt aciverra sed nullanec porta diam eu mu interdum ac, suscipit assa.</p><p>Quisque diam lorem terdum vitaapibus ac scelerisque vitae pede. Donec ege ellus non erat lacinia fermentum. Donec in velit vel ipsum auctor pulvinar. Proin ullamcorper urna et felis. Mauris fermentum tortor non enim aliquet condimentum. Nam aliquam pretium feugiat. Duis sem est, viverra enec mauris. Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu.</p>', lines: 'all'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span4">                            
+                            {{widget('content', 'title2', {content: '<h2>Our Mission</h2>', lines: 'all'})|raw}}
+                            {{widget('content', 'text2', {content: '<h3>Nullam convallis justo a vestibulum</h3><p>Quisque diam lorem terdum vitaapibus ac scelerisque vitae pede. Donec ege ellus non erat lacinia fermentum. Donec in velit vel ipsum auctor pulvinar. Proin ullamcorper urna et felis. Mauris fermentum tortor non enim aliquet condimentum. Nam aliquam pretium feugiat. Duis sem est, viverra enec mauris. Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu.</p><h3>justo a vestibulum interdum ipsum</h3><p>Quisque diam lorem terdum vitaapibus ac scelerisque vitae pede. Donec ege ellus non erat lacinia fermentum. Donec in velit vel ipsum auctor pulvinar. Proin ullamcorper urna et felis. Mauris fermentum tortor non enim aliquet condimentum. Nam aliquam pretium feugiat. Duis sem est, viverra enec mauris. Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu.</p><h3>vestibulum interdum ipsum mauris</h3><p>Quisque diam lorem terdum vitaapibus ac scelerisque vitae pede. Donec ege ellus non erat lacinia fermentum. Donec in velit vel ipsum auctor pulvinar. Proin ullamcorper urna et felis. Mauris fermentum tortor non enim aliquet condimentum. Nam aliquam pretium feugiat. Duis sem est, viverra enec mauris. Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu.</p>', lines: 'all'})|raw}}
+                            {{widget('button', 'button1', {italic: false, text:'More', 'align':'widget-align-left'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span4">
+                            {{widget('content', 'title3', {content: '<h2>Staff</h2>', lines: 'all'})|raw}}
+                            {{widget('gallery', 'staff', 
+                                {'showDescription': false,
+                                'showTitle': false,
+                                'images':
+                                [
+                                {'imageHeight':'480', 'imageWidth':'480', 'url':asset('/images/team/img1.jpg'), 'title':'title1', 'description': 'This is image 1'},
+                                {'imageHeight':'480', 'imageWidth':'480', 'url':asset('/images/team/img2.jpg'), 'title':'title2', 'description': 'This is image 2'},
+                                {'imageHeight':'480', 'imageWidth':'480', 'url':asset('/images/team/img3.jpg'), 'title':'title3', 'description': 'This is image 3'},
+                                {'imageHeight':'480', 'imageWidth':'480', 'url':asset('/images/team/img4.jpg'), 'title':'title4', 'description': 'This is image 4'},
+                                {'imageHeight':'480', 'imageWidth':'480', 'url':asset('/images/team/img5.jpg'), 'title':'title5', 'description': 'This is image 5'},
+                                {'imageHeight':'480', 'imageWidth':'480', 'url':asset('/images/team/img6.jpg'), 'title':'title6', 'description': 'This is image 6'}
+                                ]
+                            })|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                    </div>
+
+                    {{widget('content', 'title4', {content: '<h2>Testimonials</h2>', lines: 'all'})|raw}}
+
+                    <div class="row">
+                        <article class="span3">
+                            {{widget('content', 'text3', {content: '<blockquote>Aean auctorisi et urnaliqurat votpirp teerutrum an eu lastibulumtiamur lel metus. Nulla fn nec eros. Vestiblum ante ipsum primis fauus orci lucs et utrices posuersollicitud. Eitsed leo pharetra aug nec augue. Nlit magnan drerit siet tincidunt aciverra sed nullanec porta.</blockquote><small>Mark Johnson</small><a href="mailto:www.demolink.org">www.demolink.org</a>', lines: 'all'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span3">
+                            {{widget('content', 'text4', {content: '<blockquote>Aean auctorisi et urnaliqurat votpirp teerutrum an eu lastibulumtiamur lel metus. Nulla fn nec eros. Vestiblum ante ipsum primis fauus orci lucs et utrices posuersollicitud. Eitsed leo pharetra aug nec augue. Nlit magnan drerit siet tincidunt aciverra sed nullanec porta.</blockquote><small>Jessica Priston</small><a href="mailto:www.demolink.org">www.demolink.org</a>', lines: 'all'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span3">
+                            {{widget('content', 'text5', {content: '<blockquote>Aean auctorisi et urnaliqurat votpirp teerutrum an eu lastibulumtiamur lel metus. Nulla fn nec eros. Vestiblum ante ipsum primis fauus orci lucs et utrices posuersollicitud. Eitsed leo pharetra aug nec augue. Nlit magnan drerit siet tincidunt aciverra sed nullanec porta.</blockquote><small>Sam Kromstain</small><a href="mailto:www.demolink.org">www.demolink.org</a>', lines: 'all'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span3">
+                            {{widget('content', 'text6', {content: '<blockquote>Aean auctorisi et urnaliqurat votpirp teerutrum an eu lastibulumtiamur lel metus. Nulla fn nec eros. Vestiblum ante ipsum primis fauus orci lucs et utrices posuersollicitud. Eitsed leo pharetra aug nec augue. Nlit magnan drerit siet tincidunt aciverra sed nullanec porta.</blockquote><small>Noah Tompson</small><a href="mailto:www.demolink.org">www.demolink.org</a>', lines: 'all'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                    </div>
+
+                </article>
+            </div>
+        </div>
+        <div id="push"></div>
+    </div>   
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <section class="span12">
+                    {{widget('companyname', 'companyname', {"business": "Toys"})|raw}}
+                    {{widget('profile', 'copyright', { 'profileType':'copyright', 'copyright':'&copy; Copyright 2014. All rights reserved'})|raw}}
+                </section>
+            </div>
+        </div>
+    </footer> 
+</div>
+
+{% endblock %}
